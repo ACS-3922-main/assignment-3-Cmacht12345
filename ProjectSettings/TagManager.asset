@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shot
+  - AShot
+  - Ground
+  - Background
+  - Enemy
+  - Wall
+  - PickUp
+  - Checkpoint
+  - NextLevel
+  - EnemyNotActive
   layers:
   - Default
   - TransparentFX

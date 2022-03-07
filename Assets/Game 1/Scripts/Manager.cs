@@ -16,14 +16,14 @@ public class Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start() 
     {
-        _lives.text = "" + _pLives;
-        _score.text = "" + _pScore;
+        _lives.text = "Lives: " + _pLives;
+        _score.text = "Score: " + _pScore;
     }
 
     public void Health() 
     {
         _pLives--;
-        _lives.text = "" + _pLives;
+        _lives.text = "Lives: " + _pLives;
         if(_pLives == 0) 
         { 
             GameOver();
@@ -33,7 +33,7 @@ public class Manager : MonoBehaviour
     public void Score() 
     { 
         _pScore += 10;
-        _score.text = "" + _pScore;
+        _score.text = "Score: " + _pScore;
         if (_pScore == _gameWinScore) 
         {
             GameOver();

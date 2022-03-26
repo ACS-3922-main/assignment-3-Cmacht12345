@@ -10,6 +10,10 @@ public class AlienController : MonoBehaviour{
         if (other.tag == "Shot") {
             Destroy(gameObject);
             Destroy(other.gameObject);
+            AudioSource audio = GameObject.Find("AliensFactory").GetComponent<AudioSource>();
+            audio.Play();
+            GameObject lives = GameObject.Find("Canvas");
+            lives.GetComponent<Manager>().Score();
         }
     }
 
